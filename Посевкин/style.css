@@ -58,3 +58,22 @@ body{
     padding: 25px 0px;
     color: rgb(156, 156, 156);
 }
+.support{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 0px;
+    gap: 5px;
+}
+.ask-btn{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 10px 20px;
+    width: 253px;
+    height: 56px;
+    background: #33836E;
+    border-radius: 10px;
+    color: white;
+    font-size: 16px;
+}
