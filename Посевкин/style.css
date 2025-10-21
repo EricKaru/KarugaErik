@@ -102,8 +102,20 @@ font-weight: bold;
 .Box{
     width: 657px;
     display: block;
+    padding-bottom: 30px;
 }
 .Among_Botton{
-    margin: ;
     display: flex;
+    gap: 30px;
+}
+.dive{
+    display: flex;
+}
+.block{
+    display: flex;
+}
+.information_block{
+    display: flex;
+    width: auto;
+    margin: auto;
 }
