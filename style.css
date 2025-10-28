@@ -1,0 +1,127 @@
+
+body{
+    width: 1200px;
+    margin: auto;
+}
+.header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 40px;
+    gap: 30px;
+}
+.phone-number{
+    font-weight: bold;
+    font-size: 18px;
+    display: block;
+}
+.ask-btn{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 10px 20px;
+    width: 192px;
+    height: 52px;
+    background: #33836E;
+    border-radius: 10px;
+    color: white;
+    font-size: 16px;
+}
+.seacrh{
+    border: none;
+    border-radius: 10px;
+    font-size: 16px;
+    background-color: #e1e0e6a2;
+    padding: 10px;
+    width: 427px;
+    top: 40px;
+}
+.menu {
+    display: flex;
+    margin-top: 40px;
+    gap: 30px;
+    justify-content: space-between;
+    align-items: center;
+}
+.menu a{
+    color: black;
+    text-decoration: none;
+}
+.menu-border {
+    align-items: center;
+    border: 1px solid rgba(47, 43, 67, 0.15);
+    border-radius: 10px;
+    padding: 10px;
+    border-radius: 10px;
+    gap: 10px;
+}
+.tab{
+    padding: 25px 0px;
+    color: rgb(156, 156, 156);
+}
+.support{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 0px;
+    gap: 5px;
+}
+.ask_btn{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 10px 20px;
+    width: 253px;
+    height: 56px;
+    background: #33836E;
+    border-radius: 10px;
+    color: white;
+    font-size: 16px;
+}
+.heading{
+top: 277px;
+font-weight: 700;
+font-size: 38px;
+line-height: 52px;
+
+}
+.information{
+font-weight: 400;
+font-size: 16px;
+line-height: 160%;
+color: #140A32;
+}
+.number{
+font-size: 24px;
+display: flex;
+flex-direction: column;
+align-items: flex-start;
+color: rgb(0, 92, 0);
+font-weight: bold;
+}
+.Box{
+    width: 657px;
+    display: block;
+    padding-bottom: 30px;
+}
+.Among_Botton{
+    display: flex;
+    gap: 30px;
+}
+.dive{
+    display: flex;
+}
+.block{
+    display: flex;
+}
+.information_block{
+    display: flex;
+    width: auto;
+    margin: auto;
+}
+.info1{
+    padding-right: 150px;
+}
+.info2{
+    
+}
