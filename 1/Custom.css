@@ -1,0 +1,283 @@
+    :root {
+      color-scheme: dark;
+      --bg: #000;
+      --panel: #18181a;
+      --field: #303032;
+      --text: #f1f1f1;
+      --muted: #a0a0a2;
+      --accent: #c000ed;
+    }
+
+    * { box-sizing: border-box; }
+
+    body {
+      margin: 0;
+      background: var(--bg);
+      color: var(--text);
+      font-family: Arial, Helvetica, sans-serif;
+    }
+
+    .page {
+      width: min(1242px, calc(100% - 48px));
+      margin: 0 auto;
+    }
+
+    header {
+      height: 104px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      border-bottom: 1px solid #4b4b4d;
+      padding: 0 6px;
+    }
+
+    .brand {
+      display: flex;
+      align-items: center;
+      gap: 11px;
+      font-size: 42px;
+      font-weight: 700;
+      letter-spacing: -1px;
+    }
+
+    .brand-bot {
+      display: grid;
+      place-items: center;
+      width: 131px;
+      height: 44px;
+      border-radius: 28px;
+      background: var(--accent);
+      font-size: 38px;
+      line-height: 1;
+    }
+
+    nav {
+      display: flex;
+      gap: clamp(38px, 7vw, 96px);
+      margin-left: 40px;
+    }
+
+    nav a {
+      color: var(--text);
+      text-decoration: none;
+      font-size: 23px;
+    }
+
+    .socials {
+      display: flex;
+      gap: 34px;
+      color: #777;
+      font-size: 36px;
+      font-weight: bold;
+      align-items: center;
+    }
+
+    main {
+      display: grid;
+      grid-template-columns: minmax(0, 2.1fr) minmax(320px, 1fr);
+      gap: 20px;
+      padding-top: 47px;
+    }
+
+    .left, .right {
+      display: flex;
+      flex-direction: column;
+      gap: 12px;
+      min-width: 0;
+    }
+
+    .card {
+      background: var(--panel);
+      border-radius: 21px;
+      padding: 14px;
+    }
+
+    .card-title {
+      display: flex;
+      align-items: center;
+      gap: 20px;
+      height: 76px;
+      padding: 0 0 0 0;
+      font-size: 25px;
+      font-weight: 700;
+    }
+
+    .round-icon {
+      width: 50px;
+      height: 50px;
+      flex: 0 0 50px;
+      display: grid;
+      place-items: center;
+      border-radius: 50%;
+      background: #f1f1f1;
+      color: #111;
+      font-size: 26px;
+      font-weight: 400;
+    }
+
+    .crown { font-size: 31px; }
+
+    .buy-card { min-height: 319px; }
+
+    .buy-form {
+      display: grid;
+      gap: 14px;
+      margin-top: 15px;
+    }
+
+    input, select, button, .status-row {
+      width: 100%;
+      height: 60px;
+      border: 0;
+      border-radius: 15px;
+      background: var(--field);
+      color: var(--text);
+      font: inherit;
+    }
+
+    input, select {
+      padding: 0 22px;
+      font-size: 20px;
+      outline: none;
+    }
+
+    input::placeholder { color: #999; }
+
+    select {
+      appearance: none;
+      color: #999;
+      background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='18' height='12' viewBox='0 0 18 12'%3E%3Cpath d='m2 2 7 7 7-7' fill='none' stroke='%23999' stroke-width='2'/%3E%3C/svg%3E");
+      background-repeat: no-repeat;
+      background-position: right 23px center;
+    }
+
+    button {
+      height: 44px;
+      color: #999;
+      font-size: 15px;
+      font-weight: 700;
+      cursor: pointer;
+    }
+
+    .status-card { padding-bottom: 10px; }
+
+    .status-list {
+      display: grid;
+      gap: 14px;
+      margin: 0 0 0 50px;
+    }
+
+    .status-row {
+      height: 44px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 0 14px 0 0;
+      background: transparent;
+      font-size: 17px;
+      font-weight: 700;
+    }
+
+    .status-label {
+      display: flex;
+      align-items: center;
+      gap: 14px;
+    }
+
+    .status-emoji {
+      width: 35px;
+      text-align: center;
+      font-size: 25px;
+      color: #ddd;
+    }
+
+    .links-card {
+      display: flex;
+      align-items: center;
+      justify-content: space-around;
+      min-height: 131px;
+      color: #c8c8c8;
+      font-size: 20px;
+      font-weight: 700;
+      text-align: center;
+    }
+
+    .link-item {
+      display: flex;
+      flex-direction: column;
+      gap: 17px;
+      align-items: center;
+    }
+
+    .link-icon {
+      color: #777;
+      font-size: 35px;
+      line-height: 1;
+    }
+
+    .news-card {
+      min-height: 454px;
+      padding-bottom: 10px;
+    }
+
+    .news-placeholder {
+      height: 371px;
+      border-radius: 21px;
+      background: var(--field);
+    }
+
+    .donate-card { min-height: 531px; }
+
+    .donate-list {
+      display: grid;
+      gap: 14px;
+      margin-left: 50px;
+    }
+
+    .donate-option {
+      min-height: 60px;
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      padding: 0 14px 0 9px;
+      border-radius: 15px;
+      background: var(--field);
+      font-size: 20px;
+    }
+
+    .donate-option .round-icon {
+      width: 43px;
+      height: 43px;
+      flex-basis: 43px;
+      font-size: 22px;
+      background: #bcbcbc;
+    }
+
+    .donate-option .arrow {
+      margin-left: auto;
+      color: #999;
+      font-size: 23px;
+    }
+
+    @media (max-width: 850px) {
+      .page { width: min(100% - 28px, 620px); }
+      header { height: auto; min-height: 90px; flex-wrap: wrap; gap: 15px; padding: 16px 0; }
+      .brand { font-size: 32px; }
+      .brand-bot { width: 100px; height: 38px; font-size: 31px; }
+      nav { order: 3; width: 100%; justify-content: space-between; margin: 0; gap: 12px; }
+      nav a { font-size: 18px; }
+      .socials { font-size: 28px; }
+      main { grid-template-columns: 1fr; padding-top: 22px; }
+      .right { order: -1; }
+      .status-card { min-height: 245px; }
+      .news-card { min-height: auto; }
+      .news-placeholder { height: 220px; }
+      .donate-card { min-height: auto; }
+    }
+
+    @media (max-width: 440px) {
+      .card-title { font-size: 21px; gap: 13px; }
+      .status-list, .donate-list { margin-left: 0; }
+      .donate-option { font-size: 17px; }
+      .links-card { font-size: 16px; }
+    }
